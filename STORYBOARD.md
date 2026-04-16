@@ -23,6 +23,8 @@ Latveria, being the technologically advanced nation that it is, has some of the 
 
 New Floridia has a beautiful modern architecture, also being is the land of the free and gators. Obviously, achieving freedom requires weapons, especially with annoying pests in space. Their methods of blowing them off are, quite frankly, bone-chilling. But! Their weapons are incredibly good, providing a 25% boost in combat power! 
 
+After buying the items, your next destination is the Moon!
+
 DISTANCE TO SATURN: 1.56 * 10^9 km
 
 ----------------------------------------------------------------------------------------------
@@ -41,5 +43,9 @@ HEALING ITEM? (if we are using this type of system)
 POSSIBLE SITUATIONS between EARTH & MOON
 ----------------------------------------------------------------------------------------------
 
-ENGINE FAILURE - Requires 5X SPARE PARTS to fix
+On your way to the moon, you may encounter one of the following situations: 
+
+ENGINE FAILURE - Requires 3X SPARE PARTS to fix
+
+SPACE CRATE - Provides 3X SPARE PART, 3X FOOD, 3X ARMS
 
