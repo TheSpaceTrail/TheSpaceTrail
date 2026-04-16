@@ -27,7 +27,7 @@ New Floridia has a beautiful modern architecture, also being is the land of the 
 SHOP ITEMS (before buffs, bulk purchase allowed)
 
 1X SPARE PART - 500 Credits
-1X FODD - 500 Credits
+1X FOOD - 500 Credits
 1X ARMS - 500 Credits
 HEALING ITEM? (if we are using this type of system)
 
