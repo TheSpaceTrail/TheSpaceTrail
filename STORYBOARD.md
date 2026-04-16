@@ -9,8 +9,10 @@ You reach Saturn first or you fail along the way.
 
 Goal: Successfully land on Saturn
 
------------------------------------------------------------------------------------------------------------------------------------------------------INTRO
------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INTRO
+
+
 You start off on Earth in 2069 as all space-faring countries are aiming to be the first to fly to Saturn
 
 Upon starting the game, you are granted a number of credits (say, $10,000) to purchase items with. Additionally, you are met with 3 options to spawn in - Kazakhstan, Latveria and New Floridia
@@ -22,9 +24,8 @@ Latveria, being the technologically advanced nation that it is, has some of the 
 New Floridia has a beautiful modern architecture, also being is the land of the free and gators. Obviously, achieving freedom requires weapons, especially with annoying pests in space. Their methods of blowing them off are, quite frankly, bone-chilling. But! Their weapons are incredibly good, providing a 25% boost in combat power! 
 
 
------------------------------------------------------------------------------------------------------------------------------------------------------
 SHOP ITEMS (before buffs, bulk purchase allowed)
------------------------------------------------------------------------------------------------------------------------------------------------------
+
 1X SPARE PART - 500 Credits
 1X FODD - 500 Credits
 1X ARMS - 500 Credits
