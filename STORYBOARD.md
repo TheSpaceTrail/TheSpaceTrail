@@ -28,7 +28,7 @@ After buying the items, your next destination is the Moon!
 DISTANCE TO SATURN: 1.56 * 10^9 km
 
 ----------------------------------------------------------------------------------------------
-**SHOP ITEMS** (before buffs, bulk purchase allowed)
+SHOP ITEMS (before buffs, bulk purchase allowed)
 ----------------------------------------------------------------------------------------------
 
 1X SPARE PART - 500 Credits
@@ -45,7 +45,42 @@ POSSIBLE SITUATIONS between EARTH & MOON
 
 On your way to the moon, you may encounter one of the following situations: 
 
-ENGINE FAILURE - Requires 3X SPARE PARTS to fix
+ENGINE FAILURE - Unfortunately, freezing temperatures caused an engine failure. Requires 3X SPARE PARTS to fix.
 
-SPACE CRATE - Provides 3X SPARE PART, 3X FOOD, 3X ARMS
+SPACE CRATE - How convenient! There's a supply crate straight out of CS. Provides 1X SPARE PARTS, 1X FOOD, 1X ARMS and 2500 credits
 
+'FRIENDLY FIEND' - From your comms, you hear a friendly sounding voice demanding your aid. If you decide to help, it will cost 3X FOOD to help them. Will you? 
+
+[Yes] You lose 3X FOOD for being a good samaritan! In exchange, they happily offer you 2X SPARE PARTS and 1000 credits! 
+
+[No] In a fit of rage in your lack of human decency, they use up all their weapons to fire at you! Requires 2X SPARE PARTS to fix the damages. 
+
+---------------------------------------------------------------------------------------------
+MOON
+---------------------------------------------------------------------------------------------
+
+You arrive on the Moon! As it happens to be, it is the century anniversary of the Apollo 11 Mission, i.e. the Moon Landing! 
+
+Everybody seems awfully happy, be it good thing or not. Eagerly, a merchant comes up to you.
+
+"Greetings, fine sir! I go by the name of Irky Schmuck! For such a fine person of the likes of yourself, I am oh-so sure you would thoroughly enjoy my goods!"
+
+[Please them] Opens SHOP menu
+
+[Let them be] Though certainly rude, you allow their presence to bother another person. Right as you leave, you conveniently find a whole weapon stash lying around. Gain 3X ARMS.  
+
+Though a short stay, you leave the festivities to continue as you depart to the next leg of your journey, to the planet once explored in the search for extraterrestrial life, Mars!
+
+DISTANCE TO SATURN: 1.55 * 10^9 km
+
+--------------------------------------------------------------------------------------------
+PHOBOS DEIMOS PIRATES
+--------------------------------------------------------------------------------------------
+
+On your travel, you encounter the infamous _Phobos Deimos Pirates_, unsurprisingly named after the activities they regularly perform. 
+
+Through the comms, you hear violent rambles about 'how it would be in your best interest to drop off all your items'. How cliché. Now, how will you proceed?
+
+[Fight] 
+
+[Run]
