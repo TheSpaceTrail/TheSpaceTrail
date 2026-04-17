@@ -1,8 +1,12 @@
 // global control variables
-end = False
+control_variables = {
+    
+    end : False
+    
+    }
 
 // global data variables
-data = {}
+data_variables = {}
 
 function sequence_parse(entry_sequence, return_sequence = None):
 
