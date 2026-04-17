@@ -1,0 +1,54 @@
+// global control variables
+end = False
+
+// global data variables
+data = {}
+
+function sequence_parse(entry_sequence, return_sequence = None):
+
+    for item in json_sequence:
+
+        char1 = line[0]
+
+        # COMMAND
+        if char1 == "!":
+            words = line.split(" ")
+            command = words[0]
+            args = words[1:]
+
+            for i in range(len(args)):
+                if args[i].startswith("$"):
+                    var_name = args[i][1:]
+                    args[i] = get_value(var_name)
+
+            execute(command, args)
+            continue
+
+
+        # QUESTION
+        elif char1 == "?":
+            options = next_item()
+
+            while True:
+                user_choice = prompt_user(line, options)
+
+                if user_choice in options:
+                    break
+                else:
+                    print("Invalid choice, please repeat input")
+
+            skip_next_item()
+            continue
+
+
+        # DIALOGUE
+        else:
+            rich_print(item)
+            continue
+
+
+while not end:
+    file = open("storyline.json")
+    sequence_parse("intro")
+
+
