@@ -1,6 +1,30 @@
 {
-    "IntroSequence": [
-    "The year is 2069",
-    "New Floridia, Kazakstan, Latveria |?| Do you wish to be from [dark_cyan]New Floridia[/dark_cyan], [orange_red1]Kazakstan[/orange_red1] or [cyan2]Latveria[/cyan2]?"
+    "intro": [
+
+        "The year is 2069",
+
+        "?Do you wish to be from [dark_cyan]New Floridia[/dark_cyan], [orange_red1]Kazakhstan[/orange_red1] or [cyan2]Latveria[/cyan2]?",
+        [
+            "kazakhstan",
+            "new floridia",
+            "latveria"
+        ],
+        
+        "!store country choice",
+
+        "!jump_switch country",
+        {
+            "kazakhstan": "kazakhstan_intro",
+            "new floridia": "floridia_intro",
+            "latveria": "latveria_intro"
+        }
+        
+
+    ],
+
+    "kazakhstan_intro": [
+
     ]
+
+
 }
