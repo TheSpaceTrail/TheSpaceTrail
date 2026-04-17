@@ -8,7 +8,7 @@ function sequence_parse(entry_sequence, return_sequence = None):
 
     for item in json_sequence:
 
-        char1 = line[0]
+        char1 = item[0]
 
         # COMMAND
         if char1 == "!":
@@ -30,7 +30,7 @@ function sequence_parse(entry_sequence, return_sequence = None):
             options = next_item()
 
             while True:
-                user_choice = prompt_user(line, options)
+                user_choice = prompt_user(item, options)
 
                 if user_choice in options:
                     break
