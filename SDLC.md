@@ -35,3 +35,7 @@ Design:
         - end: goes back to the previous sequence unconditionally 
         
 
+    - all arbitrary python code execution can be done by starting a sequence item with "*"
+    - the string following the "*" must be valid executable python code 
+    - such as "*print("Hello, World!")
+
