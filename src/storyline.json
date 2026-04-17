@@ -24,6 +24,12 @@
 
     "kazakhstan_intro": [
 
+    ],
+
+    "store": [
+        "welcome to the store",
+        "?What do you want?",
+        ["meat", "vegetable"]
     ]
 
 
