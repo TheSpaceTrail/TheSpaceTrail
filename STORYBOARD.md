@@ -15,7 +15,7 @@ INTRO
 
 You start off on Earth in 2069 as all space-faring countries are aiming to be the first to fly to Saturn
 
-Upon starting the game, you are granted a number of credits (say, $10,000) to purchase items with. Additionally, you are met with 3 options to spawn in - Kazakhstan, Latveria and New Floridia
+Upon starting the game, you are granted a number of credits (say, 10,000) to purchase items with. Additionally, you are met with 3 options to spawn in - Kazakhstan, Latveria and New Floridia
 
 Kazakhstan is a thriving civilization, with advanced food production technology, granting an increased amount of food, with equally healthy benefits. (dunno how the food system will work tho, theoretically will grant some 25% advantage)
 
@@ -51,9 +51,9 @@ SPACE CRATE - How convenient! There's a supply crate straight out of CS. Provide
 
 'FRIENDLY FIEND' - From your comms, you hear a friendly sounding voice demanding your aid. If you decide to help, it will cost 3X FOOD to help them. Will you? 
 
-[Yes] You lose 3X FOOD for being a good samaritan! In exchange, they happily offer you 2X SPARE PARTS and 1000 credits! 
+[Help] You lose 3X FOOD for being a good samaritan! In exchange, they happily offer you 2X SPARE PARTS and 1000 credits! 
 
-[No] In a fit of rage in your lack of human decency, they use up all their weapons to fire at you! Requires 2X SPARE PARTS to fix the damages. 
+[Decline] In a fit of rage in your lack of human decency, they use up all their weapons to fire at you! Requires 2X SPARE PARTS to fix the damages. 
 
 ---------------------------------------------------------------------------------------------
 MOON
@@ -81,6 +81,16 @@ On your travel, you encounter the infamous _Phobos Deimos Pirates_, unsurprising
 
 Through the comms, you hear violent rambles about 'how it would be in your best interest to drop off all your items'. How cliché. Now, how will you proceed?
 
-[Fight] 
+[Fight] If ARMS value is >= 14: You successfully defeat them, gaining 2X SPARE PARTS, 2X FOOD, and 5000 credits in exchange of using up 5 ARMS.
 
-[Run]
+If ARMS value < 13: DEATH
+
+[Run] You barely avoid death, though your spaceship was unfortunately damaged in the process of it. You use up 3X SPARE PARTS to repair the ship.
+
+After your encounter with these hooligans, you continue your journey to Mars, successfully evading any more danger.
+
+DISTANCE TO SATURN: 1.2 * 10^9 km
+
+--------------------------------------------------------------------------------------------
+MARS
+--------------------------------------------------------------------------------------------
