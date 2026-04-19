@@ -10,7 +10,7 @@
             "latveria"
         ],
         
-        "!store country choice",
+        "!store country $choice",
 
         "!jump_switch country",
         {
