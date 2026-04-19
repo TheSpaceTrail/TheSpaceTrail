@@ -15,7 +15,7 @@ INTRO
 
 You start off on Earth in 2069 as all space-faring countries are aiming to be the first to fly to Saturn
 
-Upon starting the game, you are granted a number of credits (say, 10,000) to purchase items with. Additionally, you are met with 3 options to spawn in - Kazakhstan, Latveria and New Floridia
+Upon starting the game, you are granted a number of credits (say, 10,000) and starting supplies (5X FOOD, 5X SPARE PARTS, 5X ARMS) to purchase items with. Additionally, you are met with 3 options to spawn in - Kazakhstan, Latveria and New Floridia
 
 Kazakhstan is a thriving civilization, with advanced food production technology, granting an increased amount of food, with equally healthy benefits. (dunno how the food system will work tho, theoretically will grant some 25% advantage)
 
@@ -26,6 +26,8 @@ New Floridia has a beautiful modern architecture, also being is the land of the 
 After buying the items, your next destination is the Moon!
 
 DISTANCE TO SATURN: 1.56 * 10^9 km
+
+FOOD: -1
 
 ----------------------------------------------------------------------------------------------
 SHOP ITEMS (before buffs, bulk purchase allowed)
@@ -55,6 +57,8 @@ SPACE CRATE - How convenient! There's a supply crate straight out of CS. Provide
 
 [Decline] In a fit of rage in your lack of human decency, they use up all their weapons to fire at you! Requires 2X SPARE PARTS to fix the damages. 
 
+FOOD: -1
+
 ---------------------------------------------------------------------------------------------
 MOON
 ---------------------------------------------------------------------------------------------
@@ -73,6 +77,8 @@ Though a short stay, you leave the festivities to continue as you depart to the 
 
 DISTANCE TO SATURN: 1.55 * 10^9 km
 
+FOOD: -1
+
 --------------------------------------------------------------------------------------------
 PHOBOS DEIMOS PIRATES
 --------------------------------------------------------------------------------------------
@@ -87,10 +93,50 @@ If ARMS value < 13: DEATH
 
 [Run] You barely avoid death, though your spaceship was unfortunately damaged in the process of it. You use up 3X SPARE PARTS to repair the ship.
 
-After your encounter with these hooligans, you continue your journey to Mars, successfully evading any more danger.
+After your encounter with these hooligans, you continue your journey to Mars, successfully evading any more danger as you land in Mars.
 
 DISTANCE TO SATURN: 1.2 * 10^9 km
 
---------------------------------------------------------------------------------------------
+FOOD: -1
+
+---------------------------------------------------------------------------------------------
 MARS
---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+
+You finally arrive on the Red Planet, and are automatically greeted by a kind AI, reminiscent of the ChatGPT 4o model:
+
+"Hello traveler 😊! I will be your personal assistant on your stay here, personally delivered by Yilong Ma! If necessary, you may buy some items from me! Considering you are passing through the Asteroid Belt soon, you will surely need some additional SPARE PARTS🔩!"
+
+[Buy] Opens shop
+
+[Break the robot down] Obtain X5 SPARE PARTS and 1000 credits
+
+You leave swiftly, as you discover that your competitors are steadily approaching Saturn at a similar pace as you, though the next leg of the journey is possibly the hardest, being passing through the Asteroid Belt!
+
+DISTANCE TO SATURN: 1.2 * 10^9 km
+
+FOOD: -1
+
+---------------------------------------------------------------------------------------------
+POSSIBLE SITUATIONS IN ASTEROID BELT
+---------------------------------------------------------------------------------------------
+
+FRIENDLY SHIPS - As you traverse the asteroid belt, a friendly supply ship approaches you, wishing to supply you with resources as you continue your journey!
+
+[Accept] Receive 3X FOOD, 3X SPARE PARTS, 3X ARMS
+
+[Rob] You rob them of all the supplies on their ship! Receive 3X FOOD, 3X SPARE PARTS, 3X ARMS in addition to 2500 credits!
+
+COLLISION - While traversing the asteroid belt, you accidentally hit an asteroid, causing major damage to your ship. You use up 10X SPARE PARTS to repair the damage and solidify your ship, preventing any kind of further damage of the sort.
+
+FOOD SHORTAGE - Due to prioritizing your life and minimizing damage too much, the trip takes longer than expected! Loses 5X FOOD!
+
+FOOD: -1
+
+---------------------------------------------------------------------------------------------
+Europa
+---------------------------------------------------------------------------------------------
+
+Due to the weather being a little too intense in the only hot spot on Jupiter, the Great Red Spot, you instead maneuver your way to one of its moons, Europa.
+
+Though an extremely icy moon, it holsters a great population of scientists performing research on extraterrestrial life.
