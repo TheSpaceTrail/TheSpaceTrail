@@ -1,18 +1,23 @@
 import rich
 
-def sequence_parse(json_file_pointer, entry_sequence, return_sequence = None):
+def sequence_parse(game_sequences, entry_sequence, data_variables, control_variables, return_sequence = None):
     
-    assert control_variables in globals or control_variables in locals
-    assert data_variables in globals or data_variables in locals
+    """
+    Handles parsing of individual sequences from a json game. 
+    Any commands that jump to another sequence call this function recursively.
+    This means the game has been exited in someway when the head function returns.
+    """
 
-    json_sequence = json_file[entry_sequence]
+    sequence_items = game_sequences[entry_sequence]
 
     current_sequence = entry_sequence
 
     item_index = 0
-    while item_index < len(json_sequence):
+    while item_index < len(sequence_items):
         
-        item = json_sequence[item_index]
+        item = sequence_items[item_index]
+
+        print(item)
 
         if type(item) == type(""):
             item = item.strip()
@@ -24,9 +29,9 @@ def sequence_parse(json_file_pointer, entry_sequence, return_sequence = None):
             word_list: list[str] = item.split(" ")
             for word in range(len(word_list)):
                 if word_list[word][0] == "$":
-                    word_list[word] = data_variables[word_list[word][1:]]
+                    word_list[word] = data_variables[word_list[word][1:].lower().strip()]
 
-            item = "".join(word_list)
+            item = " ".join(word_list)
 
         control_char = item[0]
 
@@ -36,24 +41,28 @@ def sequence_parse(json_file_pointer, entry_sequence, return_sequence = None):
             
             arguments = command.split(" ")
             command_type = arguments[0]
+            print(command_type, arguments)
 
             match command_type:
                 case "store":
 
-                    variable_name = arguments[1]
+                    variable_name = arguments[1].lower().strip()
                     variable_data = arguments[2]
                     data_variables[variable_name] = variable_data
+                    print(data_variables)
+                    print(data_variables[variable_name])
 
                 case "jump_switch":
                     
                     switch_key = arguments[1]
 
-                    switch_dict = json_sequence[item_index + 1] # big problem if this isn't a dictionary
+                    switch_dict = sequence_items[item_index + 1] # big problem if this isn't a dictionary
+                    item_index += 1 # so that it skips over the switch_dict on the next item 
                     assert type(switch_dict) == type({})
 
                     switch_return = switch_dict[switch_key]
 
-                    sequence_parse(json_file_pointer, switch_return)
+                    sequence_parse(json_file_pointer, switch_return, data_variables, control_variables)
 
                 case "jump_if":
 
@@ -71,7 +80,7 @@ def sequence_parse(json_file_pointer, entry_sequence, return_sequence = None):
                     else:
                         truth = operand1 == operand2
 
-                    sequence_parse(json_file_pointer, jump_sequence, current_sequence)
+                    sequence_parse(json_file_pointer, jump_sequence, data_variables, control_variables, current_sequence)
 
                 case "jump":
                     
@@ -80,13 +89,17 @@ def sequence_parse(json_file_pointer, entry_sequence, return_sequence = None):
                     sequence_parse(json_file_pointer, jump_sequence, current_sequence)
 
                 case "end":
-                    sequence_parse(json_file_pointer, return_sequence, current_sequence)
+                    sequence_parse(json_file_pointer, return_sequence, data_variables, control_variables, current_sequence)
+
+                case _: 
+                    print("No command was run")
 
         elif control_char == "?": # this item must be a question
             
             question = item[1:]
             
-            options = json_sequence[item_index + 1]
+            options = sequence_items[item_index + 1]
+            item_index += 1 # so that it skips over the options list on the next item 
 
             while True:
 
@@ -97,6 +110,7 @@ def sequence_parse(json_file_pointer, entry_sequence, return_sequence = None):
                     continue
                 else:
                     choice = unchecked_choice
+                    data_variables["choice"] = choice
                     break
 
         elif control_char == "*": # this item is arbitrary code execution, probably don't use this
