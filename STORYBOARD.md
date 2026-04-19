@@ -131,7 +131,9 @@ COLLISION - While traversing the asteroid belt, you accidentally hit an asteroid
 
 FOOD SHORTAGE - Due to prioritizing your life and minimizing damage too much, the trip takes longer than expected! Loses 5X FOOD!
 
-FOOD: -1
+DISTANCE TO SATURN: 9.6 * 10^8 km
+
+FOOD: -3
 
 ---------------------------------------------------------------------------------------------
 Europa
@@ -139,4 +141,20 @@ Europa
 
 Due to the weather being a little too intense in the only hot spot on Jupiter, the Great Red Spot, you instead maneuver your way to one of its moons, Europa.
 
-Though an extremely icy moon, it holsters a great population of scientists performing research on extraterrestrial life.
+Though an extremely icy moon, it holsters a great population of scientists performing research on extraterrestrial life. Out of these scientists, one presents themselves before you.
+
+"Hello there, the name's Bill Nye! Some people refer to me as THE Science Guy, though that was ages ago. As I assume, you folks are making your way to Saturn, are you now? I've always had a keen interest in its rings, as they certainly are way more observable than Jupiter's! If you want to, I will provide you with my special arm and goods, obviously at a price!"
+
+[Check his goods and ARM] Obtains 5X ARMS and opens his shop!
+
+DISTANCE TO SATURN: 6.46 * 10^8 km
+
+--------------------------------------------------------------------------------------------
+FINAL LEG OF THE JOURNEY
+--------------------------------------------------------------------------------------------
+
+Incredibly close to Saturn, you encounter a major army of competitor ships, all aiming to be the first to land on Saturn. Desperate for this once in a lifetime opportunity, you are left with no choice but to...
+
+[BATTLE] If ARMS >= 25, You successfully survive this all-out war, achieving the feat of being the first human to land on Saturn. DISTANCE TO SATURN: 0 * 10^0 km
+
+If ARMS < 25, You  lose the battle, watching those filthy enemies reach your only life goal, as you slowly lose sight of it as you die of blood loss. DEATH. DISTANCE TO SATURN: ∞ * 10^∞ km
