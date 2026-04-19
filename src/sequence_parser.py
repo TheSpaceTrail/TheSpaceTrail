@@ -54,7 +54,7 @@ def sequence_parse(game_sequences, entry_sequence, data_variables, control_varia
 
                 case "jump_switch":
                     
-                    switch_key = arguments[1]
+                    switch_key = arguments[1].lower().strip()
 
                     switch_dict = sequence_items[item_index + 1] # big problem if this isn't a dictionary
                     item_index += 1 # so that it skips over the switch_dict on the next item 
