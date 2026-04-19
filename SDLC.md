@@ -30,7 +30,8 @@ Design:
     - putting a dollar sign before a name will interpret that name as a preexisting variable and will substitute in it's value
     - command reference:
         - store variable_name value: stores the value in a variable with the identifier variable_name, can later be referenced using $variable_name
-        - jump_switch switch, {case1: sequence1, ...}: must be followed by a dictionary, takes the switch argument and uses it as a key for the dictionary, then jumps to the sequence name matching the case
+        - jump_switch switch_key, {case1: sequence1, ...}: must be followed by a dictionary, takes the switch argument and uses it as a key for the dictionary, then jumps to the sequence name matching the case
+        - jump_if operand1 operand2 operation sequence: compares operand1 and operand2 using operation then jumps to sequence if the condition evaluates to true. Supported operations are =, <, and >, defaults to =. 
         - jump sequence: jumps to the specified sequence
         - end: goes back to the previous sequence unconditionally 
         
