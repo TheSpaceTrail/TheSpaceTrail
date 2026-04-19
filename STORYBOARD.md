@@ -1,11 +1,6 @@
-Story being implemented right now:
+NOTE: btw y'all can ask for an extension cause one of your teammates is unfortunately recovering from a surgery and cannot contribute to the appropriate amount of workload. Also Mr. *reddacted apparently provides extensions if the entire class demands for one on the due date. Max like 5 extensions. Keep that in mind. If y'all need me to still work on the title turtle page, I will continue though. 
 
-Along the way to Saturn you will be able to stop at the Moon, Mars, the Asteroid Belt, and Europa. 
-At these stops you can trade with friendly travellers for extra resources.
 
-On your journey you will encounter obstacles such as Phobos Deimos Pirates, Crossing the Asteroid Belt, the long distance between the Asteroid Belt and Jupiter, and finally the other countries racing from Europa to reach Saturn by any means possible
-
-You reach Saturn first or you fail along the way.
 
 Goal: Successfully land on Saturn
 
