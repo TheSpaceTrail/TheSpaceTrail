@@ -7,7 +7,7 @@
         "!slow 8 The year is [deep_sky_blue1]2069[/deep_sky_blue1].",
         "!slow 10 Your account balance; [bold][cyan1]1000[/cyan1][/bold] Star Credits.",
 
-        "!credits + 1000",
+        "!modify credits + 1000",
 
         "?\nDo you wish to be from [dark_cyan]New Floridia[/dark_cyan], [orange_red1]Kazakhstan[/orange_red1] or [cyan2]Latveria[/cyan2]?",
         [
@@ -59,9 +59,7 @@
         "[green]Spare parts are 25% cheaper![/green]",
         
         "!jump latveria_store"
-    ],
-
-    
+    ],    
 
     "kazakhstan_store": [
         
@@ -99,7 +97,48 @@
 
         "!jump "
 
+    ],
+
+    "floridia_store": [
+    
+    ],
+
+    "latveria_store": [
+    
+    ],
+
+
+    "earth_moon_junction": [
+
+    ],
+
+    "moon": [
+
+    ],
+
+    "phobos_deimos_pirates": [
+    ],
+
+    "mars": [
+
+    ],
+
+    "mars_europa_junction": [
+        
+    ],
+
+    "europa": [
+
+    ],
+
+    "saturn_war": [
+    ],
+
+    "saturn": [
+        "!end"
     ]
 
+    
 
+    
 }
