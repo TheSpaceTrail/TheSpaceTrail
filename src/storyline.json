@@ -4,8 +4,8 @@
         "# Intro is the begining sequence, starting the intro starts the game",
         "# You just lost the game btw",
 
-        "!slow 8 The year is [deep_sky_blue1]2069[/deep_sky_blue1].",
-        "!slow 10 Your account balance; [bold][cyan1]1000[/cyan1][/bold] Star Credits.",
+        "!slow 15 The year is [deep_sky_blue1]2069[/deep_sky_blue1].",
+        "!slow 20 Your account balance; [bold][cyan1]1000[/cyan1][/bold] Star Credits.",
 
         "!modify credits + 1000",
 
@@ -109,6 +109,80 @@
 
 
     "earth_moon_junction": [
+
+        "You start your journey to the [bold]moon[/bold]!",
+
+        "!random_hop engine_failiure space_crate friendly_fiend"
+
+    ],
+
+    "engine_failiure": [
+        
+        "Unfortunately, freezing cold temperatures zapped your engine, causing a critical failure in the machine.",
+        
+        "!if parts >= 1",
+        [
+            "You do not have enough parts to repair the ship, this is the end of your journey.",
+            "!end"
+        ],
+        [
+            "Unfortunately, you had to spend [bold]1 SPARE PART[/bold] but you are back on track to the moon!"
+        ]
+
+    ],
+
+
+    "space_crate": [
+
+        "You find a [yellow]space crate[/yellow]!",
+        "Lucky you, you get [bold]1x SPARE PARTS[/bold], [bold]5x FOOD[/bold], [bold][cyan1]2500S¥[/cyan1][/bold], and [bold]1x ARMS[/bold]!",
+
+        "!modify parts + 1",
+        "!modify food + 5",
+        "!modify arms + 1",
+
+        "!jump moon"
+
+    ],
+
+    "friendly_fiend": [
+
+        "Brr.. Brrr... your comms ring... brrr... brrr...",
+        "[red]Code 418[/red]. DISTRESS ASSISTANCE NEEDED",
+        "You fly over and find two people asking for help, they need [bold]3X FOOD[/bold].",
+
+        "?Do you help them?",
+        {
+            "yes": "friendly_fiend_yes",
+            "no": "friendly_fiend_no"
+        }
+
+    ],
+
+    "friendly_fiend_yes": [
+
+        "Distressed space man: Thank you so much! Have this, it is the least I could do.",
+        "RECIVED [bold]2X SPARE PARTS[/bold] and [bold][cyan1]1000S¥[/cyan1][/bold].",
+
+        "!jump moon"
+
+    ],
+
+    "friendly_fiend_no": [
+
+        "The distressed space man's face grows red with anger as he pulls his arm from his jacket and destroys your ship.",
+        
+        "!if parts >= 2",
+        [
+            "You do not have enough parts to repair your ship so you are left stranded on an asteroid. You may not make it back to Earth.",
+            "!end"
+        ],
+        [
+            "You narrowly escape the distressed space man's attacks, but you have to use [bold]2X SPARE PARTS[/bold] to repair your ship.",
+            "!modify parts - 2"
+        ],
+
+        "!jump moon"
 
     ],
 

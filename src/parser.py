@@ -10,7 +10,7 @@ storyline = json.load(open("./src/storyline.json", "r", encoding="utf-8"))
 
 database = {}
 
-player = {"credits": 0, "food": 0, "parts": 0}
+player = {"credits": 0, "food": 0, "parts": 0, "arms": 0}
 
 def check_variable(test):
 
