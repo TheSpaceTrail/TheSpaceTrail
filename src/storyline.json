@@ -1,38 +1,144 @@
 {
     "intro": [
 
-        "The year is 2069",
+        "# Intro is the begining sequence, starting the intro starts the game",
+        "# You just lost the game btw",
 
-        "?Do you wish to be from [dark_cyan]New-Floridia[/dark_cyan], [orange_red1]Kazakhstan[/orange_red1] or [cyan2]Latveria[/cyan2]?",
+        "!slow 8 The year is [deep_sky_blue1]2069[/deep_sky_blue1].",
+        "!slow 10 Your account balance; [bold][cyan1]1000[/cyan1][/bold] Star Credits.",
+
+        "!modify credits + 1000",
+
+        "?\nDo you wish to be from [dark_cyan]New Floridia[/dark_cyan], [orange_red1]Kazakhstan[/orange_red1] or [cyan2]Latveria[/cyan2]?",
         [
             "kazakhstan",
-            "new-floridia",
+            "new floridia",
             "latveria"
         ],
 
-        "# yes",
-        
         "!store country $choice",
 
-        "!jump_switch $country",
+        "!jump_switch country",
         {
             "kazakhstan": "kazakhstan_intro",
-            "new-floridia": "floridia_intro",
+            "new floridia": "floridia_intro",
             "latveria": "latveria_intro"
         }
-        
-
     ],
 
     "kazakhstan_intro": [
 
+        "DISTANCE TO SATURN: 1.56 * 10^9 km",
+
+        "The dark, beautiful crimson of Kazakhstani sky, once called New Romania, lights up the windows of the store.",
+        "A thriving civilization, Kazakhstan is the world's largest producer of neotatos, a genetically modified, hyper-resistant viral strain of, now extinct, primitive potatoes.",
+        "[green]Food is 25% cheaper for you![/green]",
+
+        "!jump kazakhstan_store"
+
     ],
 
-    "store": [
-        "welcome to the store",
-        "?What do you want?",
-        ["meat", "vegetable"]
+    "floridia_intro": [
+
+        "DISTANCE TO SATURN: 1.493 * 10^9 km",
+
+        "You look up as the dank, musky humidity of the New Floridian air hits your lungs.",
+        "Hailing from Yung Jacksonvile (once called old then new, now Yung) you, having festered for decades in swamps, are a resiliant and formidable opponent.",
+        "[green]You are 25% stronger![/green]",
+
+        "!jump floridia_store"
+        
+    ],
+
+    "latveria_intro": [
+
+        "DISTANCE TO SATURN: 1.681* 10^9 km",
+
+        "The unforgetable sting of the cold Latverian tundra hits your sinuses as you look at the blindingly white horizon.",
+        "As a scientist from the world's technological capital, you have access to the newest and most efficient transport.",
+        "[green]Spare parts are 25% cheaper![/green]",
+        
+        "!jump latveria_store"
+    ],    
+
+    "kazakhstan_store": [
+        
+        "!shop",
+        {
+            "title": "Kazakhstan's best Wares",
+
+            "store_keeper_name": "Skib McBib",
+            "store_keeper_msg": "Welcome farmer! I'll give you a discount on food!",
+
+            "items": [
+                {
+                    "name": "Space Meat", 
+                    "emoji": "🍖🌠",
+                    "price": "50",
+                    "id": "food"
+                },
+
+                {
+                    "name": "LUXE Space Meat", 
+                    "emoji": "🍖🪙",
+                    "price": "100",
+                    "id": "food"
+                },
+
+                {
+                    "name": "Replacement Part Kit", 
+                    "emoji": "🛞🪛",
+                    "price": "200",
+                    "id": "parts"
+                }
+            ]
+
+        },
+
+        "!jump "
+
+    ],
+
+    "floridia_store": [
+    
+    ],
+
+    "latveria_store": [
+    
+    ],
+
+
+    "earth_moon_junction": [
+
+    ],
+
+    "moon": [
+
+    ],
+
+    "phobos_deimos_pirates": [
+    ],
+
+    "mars": [
+
+    ],
+
+    "mars_europa_junction": [
+        
+    ],
+
+    "europa": [
+
+    ],
+
+    "saturn_war": [
+    ],
+
+    "saturn": [
+        "!end"
     ]
 
+    
 
+    
 }
