@@ -16,8 +16,10 @@ with open(json_game_path) as json_fp:
 
 game_sequences = dict(raw_game_data)
 
-control_variables = {}
-data_variables = {}
+control_variables = dict()
+data_variables = dict()
+
+control_variables["game_end"] = False
 
 sequence_parse(game_sequences, initial_entry_sequence, data_variables, control_variables)
 
