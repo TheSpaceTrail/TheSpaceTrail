@@ -44,7 +44,7 @@
 
         "You look up as the dank, musky humidity of the New Floridian air hits your lungs.",
         "Hailing from Yung Jacksonvile (once called old then new, now Yung) you, having festered for decades in swamps, are a resiliant and formidable opponent.",
-        "[green]You are 25% stronger![/green]",
+        "[green]You get arms 25% cheaper![/green]",
 
         "!jump floridia_store"
         
@@ -61,7 +61,7 @@
         "!jump latveria_store"
     ],    
 
-    "kazakhstan_store": [
+    "kazakhstan_store_earth": [
         
         "!shop",
         {
@@ -90,23 +90,246 @@
                     "emoji": "🛞🪛",
                     "price": "200",
                     "id": "parts"
+                },
+
+                {
+                    "name": "Jebediah's Arms",
+                    "emoji": "⚔️⚜️",
+                    "price": "100",
+                    "id": "parts"
                 }
             ]
 
         },
 
-        "!jump "
+        "!jump earth_moon_junction"
 
     ],
 
-    "floridia_store": [
-    
+    "floridia_store_earth": [
+            
+        "!shop",
+        {
+            "title": "Gator's General Store",
+
+            "store_keeper_name": "Gill Gator",
+            "store_keeper_msg": "Ey there Par'ner! I'll give you a discount on arms!",
+
+            "items": [
+                {
+                    "name": "Gator Meat", 
+                    "emoji": "🍖🌠",
+                    "price": "50",
+                    "id": "food"
+                },
+
+                {
+                    "name": "Premium Gator Meat", 
+                    "emoji": "🍖🪙",
+                    "price": "100",
+                    "id": "food"
+                },
+
+                {
+                    "name": "Gecko Insurance Cheap Premium Parts", 
+                    "emoji": "🛞🪛",
+                    "price": "200",
+                    "id": "parts"
+                },
+
+                {
+                    "name": "Armalite's Arms",
+                    "emoji": "⚔️⚜️",
+                    "price": "75",
+                    "id": "parts"
+                }
+            ]
+
+        },
+
+        "!jump earth_moon_junction"
+
     ],
 
-    "latveria_store": [
-    
+    "latveria_store_earth": [
+            
+        "!shop",
+        {
+            "title": "Latverian Good's",
+
+            "store_keeper_name": "John Jon Jhon Ion Lohn Long John",
+            "store_keeper_msg": "Welcome Fellow Latverians! I'll give you a discount on parts!",
+
+            "items": [
+                {
+                    "name": "Space Meat", 
+                    "emoji": "🍖🌠",
+                    "price": "25",
+                    "id": "food"
+                },
+
+                {
+                    "name": "LUXE Space Meat", 
+                    "emoji": "🍖🪙",
+                    "price": "50",
+                    "id": "food"
+                },
+
+                {
+                    "name": "High Quality Latvian Bolts and Nuts", 
+                    "emoji": "🛞🪛",
+                    "price": "150",
+                    "id": "parts"
+                },
+
+                {
+                    "name": "Jebediah's Arms",
+                    "emoji": "⚔️⚜️",
+                    "price": "100",
+                    "id": "parts"
+                }
+            ]
+
+        },
+
+        "!jump earth_moon_junction"
+
     ],
 
+    "kazakhstan_store_moon": [
+        
+        "!shop",
+        {
+            "title": "Kazakhstan's best Wares",
+
+            "store_keeper_name": "Skib McBib",
+            "store_keeper_msg": "Welcome farmer! I'll give you a discount on food!",
+
+            "items": [
+                {
+                    "name": "Space Meat", 
+                    "emoji": "🍖🌠",
+                    "price": "50",
+                    "id": "food"
+                },
+
+                {
+                    "name": "LUXE Space Meat", 
+                    "emoji": "🍖🪙",
+                    "price": "100",
+                    "id": "food"
+                },
+
+                {
+                    "name": "Replacement Part Kit", 
+                    "emoji": "🛞🪛",
+                    "price": "200",
+                    "id": "parts"
+                },
+
+                {
+                    "name": "Jebediah's Arms",
+                    "emoji": "⚔️⚜️",
+                    "price": "100",
+                    "id": "parts"
+                }
+            ]
+
+        },
+
+        "!jump moon"
+
+    ],
+
+    "floridia_store_moon": [
+            
+        "!shop",
+        {
+            "title": "Gator's General Store",
+
+            "store_keeper_name": "Gill Gator",
+            "store_keeper_msg": "Ey there Par'ner! I'll give you a discount on arms!",
+
+            "items": [
+                {
+                    "name": "Gator Meat", 
+                    "emoji": "🍖🌠",
+                    "price": "50",
+                    "id": "food"
+                },
+
+                {
+                    "name": "Premium Gator Meat", 
+                    "emoji": "🍖🪙",
+                    "price": "100",
+                    "id": "food"
+                },
+
+                {
+                    "name": "Gecko Insurance Cheap Premium Parts", 
+                    "emoji": "🛞🪛",
+                    "price": "200",
+                    "id": "parts"
+                },
+
+                {
+                    "name": "Armalite's Arms",
+                    "emoji": "⚔️⚜️",
+                    "price": "75",
+                    "id": "parts"
+                }
+            ]
+
+        },
+
+        "!jump moon"
+
+    ],
+
+    "latveria_store_moon": [
+            
+        "!shop",
+        {
+            "title": "Latverian Good's",
+
+            "store_keeper_name": "John Jon Jhon Ion Lohn Long John",
+            "store_keeper_msg": "Welcome Fellow Latverians! I'll give you a discount on parts!",
+
+            "items": [
+                {
+                    "name": "Space Meat", 
+                    "emoji": "🍖🌠",
+                    "price": "25",
+                    "id": "food"
+                },
+
+                {
+                    "name": "LUXE Space Meat", 
+                    "emoji": "🍖🪙",
+                    "price": "50",
+                    "id": "food"
+                },
+
+                {
+                    "name": "High Quality Latvian Bolts and Nuts", 
+                    "emoji": "🛞🪛",
+                    "price": "150",
+                    "id": "parts"
+                },
+
+                {
+                    "name": "Jebediah's Arms",
+                    "emoji": "⚔️⚜️",
+                    "price": "100",
+                    "id": "parts"
+                }
+            ]
+
+        },
+
+        "!jump moon"
+
+    ],
 
     "earth_moon_junction": [
 
