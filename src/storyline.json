@@ -9,6 +9,8 @@
             "new-floridia",
             "latveria"
         ],
+
+        "# yes",
         
         "!store country $choice",
 

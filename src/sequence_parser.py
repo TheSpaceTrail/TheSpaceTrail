@@ -40,7 +40,11 @@ def sequence_parse(game_sequences, entry_sequence, data_variables, control_varia
 
             control_char = item[0]
 
-            if control_char == "!": # this item must be a command
+            if control_char == "#":
+                
+                ...
+
+            elif control_char == "!": # this item must be a command
                 
                 command = item[1:]
                 
