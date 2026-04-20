@@ -125,7 +125,7 @@ def sequence_parse(game_sequences, entry_sequence, data_variables, control_varia
                 while True:
 
                     rich.print(question)
-                    unchecked_choice = input()
+                    unchecked_choice = input().lower().strip()
                     
                     if unchecked_choice not in options:
                         continue
