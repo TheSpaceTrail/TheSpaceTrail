@@ -12,7 +12,7 @@
         
         "!store country $choice",
 
-        "!jump_switch country",
+        "!jump_switch $country",
         {
             "kazakhstan": "kazakhstan_intro",
             "new floridia": "floridia_intro",
