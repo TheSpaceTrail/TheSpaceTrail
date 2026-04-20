@@ -25,7 +25,6 @@ Design:
     - questions must be followed by a list of options such as [option1, option2, option3]
     - within the scope of the sequence and up until the next question, the result of the question will be stored as a variable named choice
 
-
     - all commands will start with ! i.e. "!store country $choice"
     - putting a dollar sign before a name will interpret that name as a preexisting variable and will substitute in it's value
     - command reference:
@@ -33,9 +32,9 @@ Design:
         - jump_switch switch_key, {case1: sequence1, ...}: must be followed by a dictionary, takes the switch argument and uses it as a key for the dictionary, then jumps to the sequence name matching the case
         - jump_if operand1 operand2 operation sequence: compares operand1 and operand2 using operation then jumps to sequence if the condition evaluates to true. Supported operations are =, <, and >, defaults to =. 
         - jump sequence: jumps to the specified sequence
-        - end: goes back to the previous sequence unconditionally 
+        - end_sequence: goes back to the previous sequence unconditionally
+        - end_game: ends the game unconditionally
         
-
     - all arbitrary python code execution can be done by starting a sequence item with "*"
     - the string following the "*" must be valid executable python code 
     - such as "*print("Hello, World!")
