@@ -10,13 +10,13 @@ INTRO
 
 You start off on Earth in 2069 as all space-faring countries are aiming to be the first to fly to Saturn
 
-Upon starting the game, you are granted a number of credits (say, 10,000) and starting supplies (5X FOOD, 5X SPARE PARTS, 5X ARMS) to purchase items with. Additionally, you are met with 3 options to spawn in - Kazakhstan, Latveria and New Floridia
+Upon starting the game, you are granted a number of credits (say, 10,000) and starting supplies (5X FOOD, 5X SPARE PARTS, 5X ARMS) to purchase items with. Additionally, you are met with 3 options to spawn in - Kazakhstan, Latveria and New-Floridia
 
 Kazakhstan is a thriving civilization, with advanced food production technology, granting an increased amount of food, with equally healthy benefits. (dunno how the food system will work tho, theoretically will grant some 25% advantage)
 
 Latveria, being the technologically advanced nation that it is, has some of the best scientific advancement and machinery in the entire world. Though heavily isolated, through some plot-convenient means, you manage to stumble your way into it, and the prices for spare parts are considerably cheaper compared to the rest of the world, with parts costing 25% less! The shop owners use awfully complex words though.
 
-New Floridia has a beautiful modern architecture, also being is the land of the free and gators. Obviously, achieving freedom requires weapons, especially with annoying pests in space. Their methods of blowing them off are, quite frankly, bone-chilling. But! Their weapons are incredibly good, providing a 25% boost in combat power! 
+New-Floridia has a beautiful modern architecture, also being is the land of the free and gators. Obviously, achieving freedom requires weapons, especially with annoying pests in space. Their methods of blowing them off are, quite frankly, bone-chilling. But! Their weapons are incredibly good, providing a 25% boost in combat power! 
 
 After buying the items, your next destination is the Moon!
 
