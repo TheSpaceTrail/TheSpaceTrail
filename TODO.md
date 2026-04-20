@@ -5,3 +5,5 @@
 [ ] Update progress_log.csv with new contributions
 [ ] Finish debugging main.py and parser
 [ ] Remove any print() in parser
+[ ] Make parser a normal loop and not recursive :(
+    
