@@ -150,6 +150,6 @@ FINAL LEG OF THE JOURNEY
 
 Incredibly close to Saturn, you encounter a major army of competitor ships, all aiming to be the first to land on Saturn. Desperate for this once in a lifetime opportunity, you are left with no choice but to...
 
-[BATTLE] If ARMS >= 25, You successfully survive this all-out war, achieving the feat of being the first human to land on Saturn. DISTANCE TO SATURN: 0 * 10^0 km
+[BATTLE] If ARMS >= 3, You successfully survive this all-out war, achieving the feat of being the first human to land on Saturn. DISTANCE TO SATURN: 0 * 10^0 km
 
-If ARMS < 25, You  lose the battle, watching those filthy enemies reach your only life goal, as you slowly lose sight of it as you die of blood loss. DEATH. DISTANCE TO SATURN: ∞ * 10^∞ km
+If ARMS < 3, You  lose the battle, watching those filthy enemies reach your only life goal, as you slowly lose sight of it as you die of blood loss. DEATH. DISTANCE TO SATURN: ∞ * 10^∞ km
