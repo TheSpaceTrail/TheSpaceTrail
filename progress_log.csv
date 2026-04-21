@@ -9,5 +9,11 @@ date, name, changes
 2026-04-16, Robert, worked on design of system
 2026-04-16, Charles, furthered story
 2026-04-17, Christian, started on the parser and expanded design and added pseudocode
+2026-04-17, Robert, Worked on formatting; Terminal Class
 2026-04-18, Christian, got most of parser done and made main
+2026-04-18, Robert, Worked on names (scrapped later)
+2026-04-19, Robert, Modified formatting using rich
+2026-04-19, Robert, Added Documentation
+2026-04-19, Christian, Modified story
 2026-04-20, Christian, debugging parser and story
+2026-04-20, Robert, Added comments for readability

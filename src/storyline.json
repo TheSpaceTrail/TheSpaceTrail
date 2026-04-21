@@ -364,6 +364,8 @@
         "!modify food + 5",
         "!modify arms + 1",
 
+        "!modify credits + 2500",
+
         "!jump moon"
 
     ],

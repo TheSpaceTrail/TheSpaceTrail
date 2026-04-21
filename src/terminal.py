@@ -1,10 +1,13 @@
+# External Libraries
 import rich.align
 import rich.text
 import rich.live
 
+# Built in libraries
 import time
 import os
 
+# Terminal Class for simplicity
 class terminal:
 
     def __init__(self, console: rich.Console, letter_speed_multiplier=1):
@@ -12,10 +15,12 @@ class terminal:
         self.console = console
         self.letter_speed_multiplier = letter_speed_multiplier
 
+    # Clears Screen
     def clear_screen(self):
 
         os.system("cls")
 
+    # Centers if needed, then prints
     def print(self, text, center_horizontally=True, center_vertically=False, **args):
 
         formatted = text
@@ -38,11 +43,13 @@ class terminal:
             )
 
         self.console.print(formatted, **args)
-        
+
+    # Breaks up text into chunks and prints slows 
     def slowprint(self, text, center=True, letters_per_second=7, end: str | None = "\n"):
 
         display = rich.text.Text()
 
+        # Live with update
         with rich.live.Live(console=self.console, refresh_per_second=60) as live:
 
             for segment in rich.text.Text.from_markup(text).render(self.console):
@@ -59,6 +66,7 @@ class terminal:
             if end:
                 self.console.print(end, end="")
 
+    # Forces user to use specific window size
     def force_window_size(self, min_height, min_width):
 
         display = rich.align.Align.center(
