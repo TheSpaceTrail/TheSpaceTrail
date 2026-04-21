@@ -93,12 +93,7 @@ def run_sequence(sequence, tstt):
 
             if split_sequence[0] == "!if":
 
-                print("in if")
-                print(split_sequence)
-
                 if split_sequence[2] == ">=":
-
-                    print(">=")
 
                     if player[split_sequence[1]] >= int(split_sequence[3]):
 
@@ -149,8 +144,6 @@ def run_sequence(sequence, tstt):
         else:
 
             if sequence[idx][0] == "?":
-
-
 
                 rich.print(sequence[idx][1:])
                 

@@ -112,7 +112,7 @@
             "title": "Gator's General Store",
 
             "store_keeper_name": "Gill Gator",
-            "store_keeper_msg": "Ey there Par'ner! I'll give you a discount on arms!",
+            "store_keeper_msg": "Ey there Par'ner! I will give you a discount on arms!",
 
             "items": [
                 {
@@ -247,7 +247,7 @@
             "title": "Gator's General Store",
 
             "store_keeper_name": "Gill Gator's Moon Cousin",
-            "store_keeper_msg": "Ey there Par'ner! I'll give you a discount on arms!",
+            "store_keeper_msg": "Ey there Par'ner! I will give you a discount on arms!",
 
             "items": [
                 {
@@ -425,7 +425,7 @@
     "phobos_deimos_pirates": [
 
         "On your travel, you encounter the infamous Phobos Deimos Pirates, unsurprisingly named after the activities they regularly perform.",
-        "Through the comms, you hear violent rambles about 'how it would be in your best interest to drop off all your items'. How cliché. Now, how will you proceed?",
+        "Through the comms, you hear violent rambles about how it would [be in your best interest to drop off all your items]. How cliché. Now, how will you proceed?",
         "!if arms >= 14",
         [
             "You barely avoid death, though your spaceship was unfortunately damaged in the process of it. You use up [bold][red]3X SPARE PARTS[/red][/bold]to repair the ship.",
@@ -447,7 +447,7 @@
     "mars": [
 
         "[bold][red3]Mars[/red3][/bold], the beatiful red planet.",
-        "It used to be beautiful after a few teraforming operations in the '50s but now it's just littered with rovers.",
+        "It used to be beautiful after a few teraforming operations in the '50s but now it is just littered with rovers.",
         "Some are still collecting data to this day.",
 
         "!jump mars_europa_junction"
@@ -541,7 +541,7 @@
 
         "Due to the weather being a little too intense in the only hot spot on Jupiter, the Great Red Spot, you instead maneuver your way to one of its moons, Europa.",
         "Though an extremely icy moon, it holsters a great population of scientists performing research on extraterrestrial life. Out of these scientists, one presents themselves before you.",
-        "'Hello there, the name's Bill Nye! Some people refer to me as THE Science Guy, though that was ages ago. As I assume, you folks are making your way to Saturn, are you now? I've always had a keen interest in its rings, as they certainly are way more observable than Jupiter's! If you want to, I will provide you with my special arm and goods, obviously at a price!'",
+        "Hello there, the name is Bill Nye! Some people refer to me as THE Science Guy, though that was ages ago. As I assume, you folks are making your way to Saturn, are you now? I have always had a keen interest in its rings, as they certainly are way more observable than Jupiter's! If you want to, I will provide you with my special arm and goods, obviously at a price!",
         "Enjoy this gift of 5X Arms!",
         "!modify arms + 5",
         "!jump bill_nye_store_europa"
