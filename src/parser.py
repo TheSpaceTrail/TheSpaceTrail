@@ -45,6 +45,8 @@ def run_sequence(sequence, tstt):
             split_sequence = sequence[idx].split(" ")
         else:
             split_sequence = [sequence[idx]]
+        
+        print(sequence[idx])
 
         if sequence[idx][0] == "!":
 
@@ -86,6 +88,8 @@ def run_sequence(sequence, tstt):
                     player[split_sequence[1]] /= mod_value
 
             if split_sequence[0] == "!hop_random":
+
+                print(split_sequence)
 
                 return random.choice(split_sequence[1:])
 
@@ -132,6 +136,8 @@ def run_sequence(sequence, tstt):
                         shop.Item(name=item_obj_json["name"], emoji=item_obj_json["emoji"], price=item_obj_json["price"], id=item_obj_json["id"])
                     ])
                 
+                idx += 1
+
                 shop_obj.run()
         
         elif sequence[idx][0] == "#":

@@ -118,8 +118,9 @@ class shop:
                 
                 prompt_value = input("Which item would you like to buy? > ")
                 try: item_idx = int(prompt_value)-1
-                except: continue
-                if prompt_value.lower() == "x" or prompt_value.lower() == "exit": return ""
+                except: 
+                    if prompt_value.lower() == "x" or prompt_value.lower() == "exit": return ""
+                    continue
 
                 self.tstt.clear_screen()
 
