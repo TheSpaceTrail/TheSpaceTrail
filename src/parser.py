@@ -161,7 +161,7 @@ def run_sequence(sequence, tstt):
                     database["choice"] = rich.prompt.Prompt.ask("?> ", choices=sequence[idx+1], case_sensitive=False)
                 
                 elif type(sequence[idx+1]) == dict:
-                    database["choice"] = rich.prompt.Prompt.ask("?> ", choices=sequence[idx+1].keys(), case_sensitive=False)
+                    database["choice"] = rich.prompt.Prompt.ask("?> ", choices=list(sequence[idx+1].keys()), case_sensitive=False)
                     return sequence[idx+1][database["choice"]]
 
                 idx += 1
