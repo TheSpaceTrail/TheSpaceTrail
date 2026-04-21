@@ -387,6 +387,8 @@
         "Distressed space man: Thank you so much! Have this, it is the least I could do.",
         "RECIVED [bold]2X SPARE PARTS[/bold] and [bold][cyan1]1000S¥[/cyan1][/bold].",
 
+        "!modify credits + 1000",
+
         "!jump moon"
 
     ],
