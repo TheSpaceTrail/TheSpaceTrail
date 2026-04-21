@@ -72,15 +72,17 @@ def run_sequence(sequence, tstt):
                 return "end"
 
             if split_sequence[0] == "!modify":
-                mod_value = player[split_sequence[1]]
+                player_value = player[split_sequence[1]]
+                mod_value = int(split_sequence[3])
+                
                 if split_sequence[2] == "+":
-                    player[split_sequence[1]] = mod_value + split_sequence[3]
+                    player[split_sequence[1]] + mod_value
                 elif split_sequence[2] == "-":
-                    player[split_sequence[1]] = mod_value - split_sequence[3]
+                    player[split_sequence[1]] - mod_value
                 elif split_sequence[2] == "/":
-                    player[split_sequence[1]] = mod_value * split_sequence[3]
+                    player[split_sequence[1]] * mod_value
                 elif split_sequence[2] == "/":
-                    player[split_sequence[1]] = mod_value / split_sequence[3]
+                    player[split_sequence[1]] / mod_value
 
             if split_sequence[0] == "!shop":
 
