@@ -87,9 +87,7 @@ def run_sequence(sequence, tstt):
                 elif split_sequence[2] == "/":
                     player[split_sequence[1]] /= mod_value
 
-            if split_sequence[0] == "!hop_random":
-
-                print(split_sequence)
+            if split_sequence[0] == "!random_hop":
 
                 return random.choice(split_sequence[1:])
 
