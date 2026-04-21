@@ -3,9 +3,10 @@
 
         "# Intro is the begining sequence, starting the intro starts the game",
         "# You just lost the game btw",
+        "!modify credits + 1000",
 
         "!slow 15 The year is [deep_sky_blue1]2069[/deep_sky_blue1].",
-        "!slow 20 Your account balance; [bold][cyan1]1000[/cyan1][/bold] Star Credits.",
+        "!slow 20 Your account balance; [bold][cyan1]$[/cyan1][/bold] Star Credits.",
 
         "!modify credits + 1000",
 
@@ -34,7 +35,7 @@
         "A thriving civilization, Kazakhstan is the world's largest producer of neotatos, a genetically modified, hyper-resistant viral strain of, now extinct, primitive potatoes.",
         "[green]Food is 25% cheaper for you![/green]",
 
-        "!jump kazakhstan_store"
+        "!jump kazakhstan_store_earth"
 
     ],
 
@@ -46,7 +47,7 @@
         "Hailing from Yung Jacksonvile (once called old then new, now Yung) you, having festered for decades in swamps, are a resiliant and formidable opponent.",
         "[green]You get arms 25% cheaper![/green]",
 
-        "!jump floridia_store"
+        "!jump floridia_store_earth"
         
     ],
 
@@ -58,7 +59,7 @@
         "As a scientist from the world's technological capital, you have access to the newest and most efficient transport.",
         "[green]Spare parts are 25% cheaper![/green]",
         
-        "!jump latveria_store"
+        "!jump latveria_store_earth"
     ],    
 
     "kazakhstan_store_earth": [
