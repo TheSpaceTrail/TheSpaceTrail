@@ -6,9 +6,7 @@
         "!modify credits + 1000",
 
         "!slow 15 The year is [deep_sky_blue1]2069[/deep_sky_blue1].",
-        "!slow 20 Your account balance; [bold][cyan1]$[/cyan1][/bold] Star Credits.",
-
-        "!modify credits + 1000",
+        "!slow 20 Your account balance; [bold][cyan1]1000[/cyan1][/bold] Space Yen.",
 
         "?\nDo you wish to be from [dark_cyan]New Floridia[/dark_cyan], [orange_red1]Kazakhstan[/orange_red1] or [cyan2]Latveria[/cyan2]?",
         [
