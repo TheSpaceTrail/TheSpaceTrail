@@ -85,6 +85,32 @@ def run_sequence(sequence, tstt):
                 elif split_sequence[2] == "/":
                     player[split_sequence[1]] /= mod_value
 
+            if split_sequence[0] == "!hop_random":
+
+                return random.choice(split_sequence[1:])
+
+            if split_sequence[0] == "!if":
+
+                if split_sequence[1] == ">=":
+
+                    if player[split_sequence[2]] >= int(split_sequence[3]):
+
+                        return run_sequence(sequence[idx+2])
+                    
+                    else:
+
+                        return run_sequence(sequence[idx+1])
+                
+                if split_sequence[1] == "<=":
+
+                    if player[split_sequence[2]] <= int(split_sequence[3]):
+
+                        return run_sequence(sequence[idx+2])
+                    
+                    else:
+
+                        return run_sequence(sequence[idx+1])
+
 
             if split_sequence[0] == "!shop":
 
