@@ -71,6 +71,17 @@ def run_sequence(sequence, tstt):
 
                 return "end"
 
+            if split_sequence[0] == "!modify":
+                mod_value = player[split_sequence[1]]
+                if split_sequence[2] == "+":
+                    player[split_sequence[1]] = mod_value + split_sequence[3]
+                elif split_sequence[2] == "-":
+                    player[split_sequence[1]] = mod_value - split_sequence[3]
+                elif split_sequence[2] == "/":
+                    player[split_sequence[1]] = mod_value * split_sequence[3]
+                elif split_sequence[2] == "/":
+                    player[split_sequence[1]] = mod_value / split_sequence[3]
+
             if split_sequence[0] == "!shop":
 
                 shop_obj_json = sequence[idx+1]
