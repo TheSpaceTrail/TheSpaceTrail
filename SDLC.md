@@ -39,3 +39,13 @@ Design:
     - the string following the "*" must be valid executable python code 
     - such as "*print("Hello, World!")
 
+Notes:
+- Do not design a game like this ever. This has gone terribly. We have dug ourselves too deep in the hole of writing our own customer parser and interpreting a JSON file to run the game.
+
+Testing:
+- All questions should have their input verified with the list that comes after.
+
+Reflection:
+- It would have taken much less time to write the game in a normal way. 
+- In the future I would recommend to write this in a normal way.
+
