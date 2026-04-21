@@ -96,7 +96,7 @@
                     "name": "Jebediah's Arms",
                     "emoji": "⚔️⚜️",
                     "price": "100",
-                    "id": "parts"
+                    "id": "arms"
                 }
             ]
 
@@ -141,7 +141,7 @@
                     "name": "Armalite's Arms",
                     "emoji": "⚔️⚜️",
                     "price": "75",
-                    "id": "parts"
+                    "id": "arms"
                 }
             ]
 
@@ -186,7 +186,7 @@
                     "name": "Jebediah's Arms",
                     "emoji": "⚔️⚜️",
                     "price": "100",
-                    "id": "parts"
+                    "id": "arms"
                 }
             ]
 
@@ -231,7 +231,7 @@
                     "name": "Jebediah's Arms",
                     "emoji": "⚔️⚜️",
                     "price": "100",
-                    "id": "parts"
+                    "id": "arms"
                 }
             ]
 
@@ -276,7 +276,7 @@
                     "name": "Armalite's Arms",
                     "emoji": "⚔️⚜️",
                     "price": "75",
-                    "id": "parts"
+                    "id": "arms"
                 }
             ]
 
@@ -321,7 +321,7 @@
                     "name": "Jebediah's Arms",
                     "emoji": "⚔️⚜️",
                     "price": "100",
-                    "id": "parts"
+                    "id": "arms"
                 }
             ]
 
@@ -410,7 +410,7 @@
     ],
 
     "moon": [
-
+        "!jump phobos_deimos_pirates"
     ],
 
     "phobos_deimos_pirates": [
@@ -427,30 +427,114 @@
         [
             "You barely avoid death, though your spaceship was unfortunately damaged in the process of it. You use up [bold][red]3X SPARE PARTS[/red][/bold]to repair the ship.",
             "!modify parts - 3"
-        ]
+        ],
+        "After your encounter with these hooligans, you continue your journey to Mars, successfully evading any more danger as you land in Mars.",
+
+        "!modify food - 1",
+        "!jump mars"
 
     ],
 
     "mars": [
 
+         "!jump mars_europa_junction"
+
     ],
 
     "mars_europa_junction": [
-        
+        "!jump europa"
     ],
 
     "europa": [
 
+        "Due to the weather being a little too intense in the only hot spot on Jupiter, the Great Red Spot, you instead maneuver your way to one of its moons, Europa.",
+        "Though an extremely icy moon, it holsters a great population of scientists performing research on extraterrestrial life. Out of these scientists, one presents themselves before you.",
+        "'Hello there, the name's Bill Nye! Some people refer to me as THE Science Guy, though that was ages ago. As I assume, you folks are making your way to Saturn, are you now? I've always had a keen interest in its rings, as they certainly are way more observable than Jupiter's! If you want to, I will provide you with my special arm and goods, obviously at a price!'",
+        "Enjoy this gift of 5X Arms!",
+        "!modify arms + 5",
+        "jump bill_nye_store_europa"
+
+
+    ],
+
+    "bill_nye_store_europa": [
+                
+        "!shop",
+        {
+            "title": "Science Guy's Speciality Space Shop",
+
+            "store_keeper_name": "Bill Nye",
+            "store_keeper_msg": "Did you know that underneath the icy surface of Europa, lies a salty liquid ocean?",
+
+            "items": [
+                {
+                    "name": "Europa-en Fish", 
+                    "emoji": "🍖🌠",
+                    "price": "75",
+                    "id": "food"
+                },
+
+                {
+                    "name": "Premium Europa-en Fish", 
+                    "emoji": "🍖🪙",
+                    "price": "150",
+                    "id": "food"
+                },
+
+                {
+                    "name": "Gas Giant Starship Repair Kit", 
+                    "emoji": "🛞🪛",
+                    "price": "250",
+                    "id": "parts"
+                },
+
+                {
+                    "name": "Galilean Steel Arms",
+                    "emoji": "⚔️⚜️",
+                    "price": "150",
+                    "id": "arms"
+                }
+            ]
+
+        },
+
+        "!jump europa_post_shop"
+
+    ],
+
+    "europa_post_shop" : [
+
+        "Last stretch of the journey!",
+        "DISTANCE TO SATURN: 6.46 * 10^8 km",
+        "!jump saturn_war"
+
     ],
 
     "saturn_war": [
+
+        "Incredibly close to Saturn, you encounter a major army of competitor ships, all aiming to be the first to land on Saturn. Desperate for this once in a lifetime opportunity, you are left with no choice but to...",
+        "[bold][red]...BATTLE!!![/red][/bold]",
+        "if arms >= 10",
+        [
+            "You successfully survive this all-out war, achieving the feat of being the first human to land on Saturn.",
+            "[bold][green]DISTANCE TO SATURN: 0 * 10^0 km[/green][/bold]",
+            "!jump saturn"
+        ],
+        [
+            "You lose the battle, watching those filthy enemies reach your only life goal, as you slowly lose sight of it as you die of blood loss.",
+            "[bold][red] DISTANCE TO SATURN: ∞ * 10^∞ km[/red][/bold]",
+            "[bold][red]YOU LOSE![/red][/bold]",
+            "!end"
+        ]
+
     ],
 
     "saturn": [
+        "Congratulations!",
+        "You successfully made it to Saturn!",
+        "$country was correct to rest its future on you.",
+        "[bold][green]YOU WIN![/green][/bold]",
         "!end"
     ]
-
-    
-
     
 }
