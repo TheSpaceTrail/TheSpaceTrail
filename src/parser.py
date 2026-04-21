@@ -71,7 +71,7 @@ def run_sequence(sequence, tstt):
 
                 return "end"
 
-            if split_sequence[0] == "!modify":
+            if split_sequence[0] == "!modify": # checks for what player value it's modifying then the amount to modify by then the operation for modification
                 player_value = player[split_sequence[1]]
                 mod_value = int(split_sequence[3])
 
