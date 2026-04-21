@@ -236,7 +236,7 @@
 
         },
 
-        "!jump moon"
+        "!jump phobos_deimos_pirates"
 
     ],
 
@@ -281,7 +281,7 @@
 
         },
 
-        "!jump moon"
+        "!jump phobos_deimos_pirates"
 
     ],
 
@@ -326,7 +326,7 @@
 
         },
 
-        "!jump moon"
+        "!jump phobos_deimos_pirates"
 
     ],
 
@@ -409,7 +409,16 @@
     ],
 
     "moon": [
-        "!jump phobos_deimos_pirates"
+
+        "You made it to the moon!",
+        "You jump around for a little bit before heading to the shops for supplies.",
+
+        "!jump_switch country",
+        {
+            "kazakhstan": "kazakhstan_store_moon",
+            "new floridia": "floridia_store_moon",
+            "latveria": "latveria_store_moon"
+        }
     ],
 
     "phobos_deimos_pirates": [
@@ -418,14 +427,14 @@
         "Through the comms, you hear violent rambles about 'how it would be in your best interest to drop off all your items'. How cliché. Now, how will you proceed?",
         "if arms >= 14",
         [
+            "You barely avoid death, though your spaceship was unfortunately damaged in the process of it. You use up [bold][red]3X SPARE PARTS[/red][/bold]to repair the ship.",
+            "!modify parts - 3"
+        ],
+        [
             "You successfully defeat them, gaining [bold]2X SPARE PARTS, 2X FOOD[/bold], [bold][cyan1]5000S¥[/cyan1][/bold] in exchange of using up [bold]5X ARMS[/bold]",
             "!modify parts + 2",
             "!modify food + 2",
             "!modify credits + 5000"
-        ],
-        [
-            "You barely avoid death, though your spaceship was unfortunately damaged in the process of it. You use up [bold][red]3X SPARE PARTS[/red][/bold]to repair the ship.",
-            "!modify parts - 3"
         ],
         "After your encounter with these hooligans, you continue your journey to Mars, successfully evading any more danger as you land in Mars.",
 
@@ -436,24 +445,105 @@
 
     "mars": [
 
-         "!jump mars_europa_junction"
+        "[bold][red3]Mars[/red3][/bold], the beatiful red planet.",
+        "It used to be beautiful after a few teraforming operations in the '50s but now it's just littered with rovers.",
+        "Some are still collecting data to this day.",
+
+        "!jump mars_europa_junction"
 
     ],
 
     "mars_europa_junction": [
+        
+        "!random_hop friendly_ships collision food_shortage"
+        
+    ],
+
+    "friendly_ships": [
+
+        "As you cross the asteroid belt you come accross some friendly ships.",
+        "The leaders of the ships offer free supplies to help you on your journey.",
+
+        "?Do you accept their offers or rob them of all they have?",
+        {
+            "accept": "friendly_ships_accept",
+            "rob": "friendly_ships_rob"
+        }
+
+    ],
+
+    "friendly_ships_accept": [
+
+        "You recive [bold]3X FOOD[/bold], [bold]3X SPARE PARTS[/bold] and [bold]1X ARMS[/bold].",
+    
+        "!modify arms + 1",
+        "!modify food + 3",
+        "!modify parts + 3",
+
         "!jump europa"
+
+    ],
+
+    "friendly_ships_accept": [
+
+        "You betray the trust of your fellow travellers and recive [bold]3X FOOD[/bold], [bold]3X SPARE PARTS[/bold] and [bold]1X ARMS[/bold].",
+        "You, being the master criminal you are, also steal [bold][cyan1]5S¥[/cyan1][/bold].",
+    
+        "!modify arms + 1",
+        "!modify food + 3",
+        "!modify parts + 3",
+        "!modify credits + 1",
+
+        "!jump europa"
+
+    ],
+
+    "collision": [
+
+        "While carefully maneuvering the asteroid cloud, avoiding spending too many Parsecs moving around, you hit an asteroid.",
+
+        "if parts >= 5",
+        [
+            "You do not have enough spare parts to repair your ship. This is the end of your journey.",
+            "!end"
+        ],
+
+        [
+            "You have enough spare parts to repair the damage and fix your ship!",
+            "!modify parts - 5",
+            "!jump europa"
+
+        ]
+
+    ],
+
+    "food_shortage": [
+        "You prioritized the lives of your crewmates and minimizing hull damage too much! Food is being wasted the longer you travel.",
+
+        "if food >= 5",
+        [
+            "You run out of food. The end.",
+            "!end"
+        ],
+
+        [
+            "You have enough to go on the last leg of your jouney!",
+            "!modify food - 5",
+            "!jump europa"
+
+        ]
     ],
 
     "europa": [
+
+        "DISTANCE TO SATURN: 9.6 * 10^8 km",
 
         "Due to the weather being a little too intense in the only hot spot on Jupiter, the Great Red Spot, you instead maneuver your way to one of its moons, Europa.",
         "Though an extremely icy moon, it holsters a great population of scientists performing research on extraterrestrial life. Out of these scientists, one presents themselves before you.",
         "'Hello there, the name's Bill Nye! Some people refer to me as THE Science Guy, though that was ages ago. As I assume, you folks are making your way to Saturn, are you now? I've always had a keen interest in its rings, as they certainly are way more observable than Jupiter's! If you want to, I will provide you with my special arm and goods, obviously at a price!'",
         "Enjoy this gift of 5X Arms!",
         "!modify arms + 5",
-        "jump bill_nye_store_europa"
-
-
+        "!jump bill_nye_store_europa"
     ],
 
     "bill_nye_store_europa": [
@@ -513,7 +603,7 @@
 
         "Incredibly close to Saturn, you encounter a major army of competitor ships, all aiming to be the first to land on Saturn. Desperate for this once in a lifetime opportunity, you are left with no choice but to...",
         "[bold][red]...BATTLE!!![/red][/bold]",
-        "if arms >= 10",
+        "!if arms >= 10",
         [
             "You successfully survive this all-out war, achieving the feat of being the first human to land on Saturn.",
             "[bold][green]DISTANCE TO SATURN: 0 * 10^0 km[/green][/bold]",

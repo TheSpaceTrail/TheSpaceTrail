@@ -1,3 +1,4 @@
+import random
 import json
 
 import rich
@@ -114,9 +115,16 @@ def run_sequence(sequence, tstt):
 
             if sequence[idx][0] == "?":
 
+
+
                 rich.print(sequence[idx][1:])
                 
-                database["choice"] = rich.prompt.Prompt.ask("?> ", choices=sequence[idx+1])
+                if type(sequence[idx+1]) == list:
+                    database["choice"] = rich.prompt.Prompt.ask("?> ", choices=sequence[idx+1])
+                
+                elif type(sequence[idx+1]) == dict:
+                    database["choice"] = rich.prompt.Prompt.ask("?> ", choices=sequence[idx+1].keys())
+                    return sequence[idx+1][database["choice"]]
 
                 idx += 1
 
