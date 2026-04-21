@@ -46,7 +46,7 @@ def run_sequence(sequence, tstt):
         else:
             split_sequence = [sequence[idx]]
         
-        print(sequence[idx])
+        #print(sequence[idx])
 
         if sequence[idx][0] == "!":
 
@@ -93,25 +93,30 @@ def run_sequence(sequence, tstt):
 
             if split_sequence[0] == "!if":
 
-                if split_sequence[1] == ">=":
+                print("in if")
+                print(split_sequence)
 
-                    if player[split_sequence[2]] >= int(split_sequence[3]):
+                if split_sequence[2] == ">=":
 
-                        return run_sequence(sequence[idx+2])
+                    print(">=")
+
+                    if player[split_sequence[1]] >= int(split_sequence[3]):
+
+                        return run_sequence(sequence[idx+2], tstt)
                     
                     else:
 
-                        return run_sequence(sequence[idx+1])
+                        return run_sequence(sequence[idx+1], tstt)
                 
-                if split_sequence[1] == "<=":
+                if split_sequence[2] == "<=":
 
-                    if player[split_sequence[2]] <= int(split_sequence[3]):
+                    if player[split_sequence[1]] <= int(split_sequence[3]):
 
-                        return run_sequence(sequence[idx+2])
+                        return run_sequence(sequence[idx+2], tstt)
                     
                     else:
 
-                        return run_sequence(sequence[idx+1])
+                        return run_sequence(sequence[idx+1], tstt)
 
 
             if split_sequence[0] == "!shop":

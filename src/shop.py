@@ -162,7 +162,7 @@ class shop:
 
                     self.diff = item_chosen.price*number_of_items
 
-                    print(self.player)
+                    #print(self.player)
 
 
 if __name__ == "__main__":

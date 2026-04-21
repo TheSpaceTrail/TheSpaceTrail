@@ -426,21 +426,21 @@
 
         "On your travel, you encounter the infamous Phobos Deimos Pirates, unsurprisingly named after the activities they regularly perform.",
         "Through the comms, you hear violent rambles about 'how it would be in your best interest to drop off all your items'. How cliché. Now, how will you proceed?",
-        "if arms >= 14",
+        "!if arms >= 14",
         [
             "You barely avoid death, though your spaceship was unfortunately damaged in the process of it. You use up [bold][red]3X SPARE PARTS[/red][/bold]to repair the ship.",
-            "!modify parts - 3"
+            "!modify parts - 3",
+            "!jump mars"
         ],
         [
             "You successfully defeat them, gaining [bold]2X SPARE PARTS, 2X FOOD[/bold], [bold][cyan1]5000S¥[/cyan1][/bold] in exchange of using up [bold]5X ARMS[/bold]",
+            "After your encounter with these hooligans, you continue your journey to Mars, successfully evading any more danger as you land in Mars.",
             "!modify parts + 2",
             "!modify food + 2",
-            "!modify credits + 5000"
-        ],
-        "After your encounter with these hooligans, you continue your journey to Mars, successfully evading any more danger as you land in Mars.",
+            "!modify credits + 5000",
 
-        "!modify food - 1",
-        "!jump mars"
+            "!jump mars"
+        ]
 
     ],
 
@@ -503,7 +503,7 @@
 
         "While carefully maneuvering the asteroid cloud, avoiding spending too many Parsecs moving around, you hit an asteroid.",
 
-        "if parts >= 5",
+        "!if parts >= 5",
         [
             "You do not have enough spare parts to repair your ship. This is the end of your journey.",
             "!end"
@@ -521,7 +521,7 @@
     "food_shortage": [
         "You prioritized the lives of your crewmates and minimizing hull damage too much! Food is being wasted the longer you travel.",
 
-        "if food >= 5",
+        "!if food >= 5",
         [
             "You run out of food. The end.",
             "!end"
@@ -622,7 +622,7 @@
     "saturn": [
         "Congratulations!",
         "You successfully made it to Saturn!",
-        "$country was correct to rest its future on you.",
+
         "[bold][green]YOU WIN![/green][/bold]",
         "!end"
     ]
