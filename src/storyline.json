@@ -334,11 +334,11 @@
 
         "You start your journey to the [bold]moon[/bold]!",
 
-        "!random_hop engine_failiure space_crate friendly_fiend"
+        "!random_hop engine_failure space_crate friendly_fiend"
 
     ],
 
-    "engine_failiure": [
+    "engine_failure": [
         
         "Unfortunately, freezing cold temperatures zapped your engine, causing a critical failure in the machine.",
         
@@ -348,7 +348,8 @@
             "!end"
         ],
         [
-            "Unfortunately, you had to spend [bold]1 SPARE PART[/bold] but you are back on track to the moon!"
+            "Unfortunately, you had to spend [bold]X1 SPARE PART[/bold] but you are back on track to the moon!",
+            "!jump moon"
         ]
 
     ],
