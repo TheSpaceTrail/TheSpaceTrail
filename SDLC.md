@@ -1,5 +1,5 @@
 Planning:
-- Game will be based off The Oregon Trail (https://oregontrail.ws/games/the-oregon-trail/)
+- Problem Statment: A Game based off The Oregon Trail (https://oregontrail.ws/games/the-oregon-trail/)
 - Must make storyboard and write dialogue
     - Goal is to get to Saturn
     - Pick a country to join
@@ -40,7 +40,8 @@ Design:
     - such as "*print("Hello, World!")
 
 Notes:
-- Do not design a game like this ever. This has gone terribly. We have dug ourselves too deep in the hole of writing our own customer parser and interpreting a JSON file to run the game.
+- We learned that making a custom Domain-Specific language based on JSON is not an efficient or effective way to program a video game.
+- It is hard to maintain and takes much longer than just using the Python language directly
 
 Testing:
 - All questions should have their input verified with the list that comes after.

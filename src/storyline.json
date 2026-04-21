@@ -430,17 +430,17 @@
         "Through the comms, you hear violent rambles about how it would [be in your best interest to drop off all your items]. How cliché. Now, how will you proceed?",
         "!if arms >= 14",
         [
-            "You barely avoid death, though your spaceship was unfortunately damaged in the process of it. You use up [bold][red]3X SPARE PARTS[/red][/bold]to repair the ship.",
-            "!modify parts - 3",
-            "!jump mars"
-        ],
-        [
             "You successfully defeat them, gaining [bold]2X SPARE PARTS, 2X FOOD[/bold], [bold][cyan1]5000S¥[/cyan1][/bold] in exchange of using up [bold]5X ARMS[/bold]",
             "After your encounter with these hooligans, you continue your journey to Mars, successfully evading any more danger as you land in Mars.",
             "!modify parts + 2",
             "!modify food + 2",
             "!modify credits + 5000",
 
+            "!jump mars"
+        ],
+        [
+            "You barely avoid death, though your spaceship was unfortunately damaged in the process of it. You use up [bold][red]3X SPARE PARTS[/red][/bold]to repair the ship.",
+            "!modify parts - 3",
             "!jump mars"
         ]
 
@@ -608,15 +608,15 @@
         "[bold][red]...BATTLE!!![/red][/bold]",
         "!if arms >= 10",
         [
-            "You successfully survive this all-out war, achieving the feat of being the first human to land on Saturn.",
-            "[bold][green]DISTANCE TO SATURN: 0 * 10^0 km[/green][/bold]",
-            "!jump saturn"
-        ],
-        [
             "You lose the battle, watching those filthy enemies reach your only life goal, as you slowly lose sight of it as you die of blood loss.",
             "[bold][red] DISTANCE TO SATURN: ∞ * 10^∞ km[/red][/bold]",
             "[bold][red]YOU LOSE![/red][/bold]",
             "!end"
+        ],
+        [
+            "You successfully survive this all-out war, achieving the feat of being the first human to land on Saturn.",
+            "[bold][green]DISTANCE TO SATURN: 0 * 10^0 km[/green][/bold]",
+            "!jump saturn"
         ]
 
     ],
