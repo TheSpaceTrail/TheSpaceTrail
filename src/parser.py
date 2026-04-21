@@ -77,13 +77,13 @@ def run_sequence(sequence, tstt):
                 mod_value = int(split_sequence[3])
 
                 if split_sequence[2] == "+":
-                    player[split_sequence[1]] += mod_value
+                    player_value += mod_value
                 elif split_sequence[2] == "-":
-                    player[split_sequence[1]] -= mod_value
+                    player_value -= mod_value
                 elif split_sequence[2] == "/":
-                    player[split_sequence[1]] *= mod_value
+                    player_value *= mod_value
                 elif split_sequence[2] == "/":
-                    player[split_sequence[1]] /= mod_value
+                    player_value /= mod_value
 
             if split_sequence[0] == "!hop_random":
 
