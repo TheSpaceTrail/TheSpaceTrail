@@ -16,7 +16,7 @@ To bypass the intro sequence run `python -m src_tst.ignore`.
 
 # CEJBSBDSL
 Code Efficent JSON-Based Story-Boarding Domain Specific language is a mistake. 
-May it serve as a harrowing example for any aspiring programmer. Never make new infrastructure when it already exists and can already meet your needs.
+May it serve as a harrowing example for any aspiring programmer. Never make new infrastructure when it was made for you and can meet your needs.
 We *already* had a lightweight scripting language to write our game in; Python! We should have just used Python and added some functions.
 Instead, we chose to invent a DSL specifically for this game, we spent so much time making this language, all encompasing, expandable and flexible when we could have just made a few functions in Python.
 
@@ -27,7 +27,7 @@ If you want to see the language spec look at [SDLC.md](SDLC.md).
 
 If you want to look at some beatiful syntax sugar take a look at [/src_tst/storyline.json](/src_tst/storyline.json)
 
-The entire CEJBSBDSL language can be accessed in [CEJBSBDSL.py](/src_tst/CEJBSBDSL.py).
+The entire CEJBSBDSL language can be accessed in [CEJBSBDSL.py](/CEJBSBDSL.py).
 ```
 python CEJBSBDSL.py --file script.json --entry-point "run"
 ```
