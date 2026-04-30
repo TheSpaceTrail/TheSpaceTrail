@@ -15,8 +15,8 @@ def error(error_message, code, warning=False):
 parser = argparse.ArgumentParser()
 
 parser.add_argument("-f", "--file", help="path to script")
-parser.add_argument("-e", "--entry-point", default="init", required=False, help="program entry point")
-parser.add_argument("-s", "--seed", default="42", required=False, help="random seed")
+parser.add_argument("-e", "--entry-point", default="init", required=False, help="program entry point (default: \"init\")")
+parser.add_argument("-s", "--seed", default="42", required=False, help="random seed (default: 42)")
 parser.add_argument("-v", "--version", action="version", version=CEJBSBDSL_VERSION)
 
 args = parser.parse_args()
