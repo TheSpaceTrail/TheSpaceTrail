@@ -31,16 +31,32 @@ The entire CEJBSBDSL language can be accessed in [CEJBSBDSL.py](/CEJBSBDSL.py).
 ```
 python CEJBSBDSL.py --file script.json --entry-point "run"
 ```
+
 Example:
 ```
 > python CEJBSBDSL.py --file .\src_tst\demo.json --entry-point "demo"
 Hello, World!
 ```
 
+
 # Problems/Questions
 
 ## I'm having trouble with rich compatibility
 We used `rich==14.3.3`, so install the version we used with `pip install rich==14.3.3`. We also require a minimum vertical terminal size of 20, and horizontal size of 110. You can ignore this limitation by running `python -m src_tst.ignore`.
+
+Help:
+```
+> python CEJBSBDSL.py --help
+usage: CEJBSBDSL.py [-h] [-f FILE] [-e ENTRY_POINT] [-s SEED] [-v]
+
+options:
+  -h, --help            show this help message and exit
+  -f, --file FILE       path to script
+  -e, --entry-point ENTRY_POINT
+                        program entry point (default: "init")
+  -s, --seed SEED       random seed (default: 42)
+  -v, --version         show program's version number and exit
+```
 
 
 ## Can I contribute?
