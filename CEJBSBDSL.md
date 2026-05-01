@@ -17,6 +17,17 @@ python CEJBSBDSL.py --file script.json --entry-point "run"
 ```
 
 Example:
+
+`demo.json`
+```json
+{
+    "demo": [
+        "Hello, World!",
+        "!end"
+    ]
+}
+```
+
 ```
 > python CEJBSBDSL.py --file .\src_tst\demo.json --entry-point "demo"
 Hello, World!
