@@ -1,6 +1,6 @@
 # The Space Trail
 
-![Python 3.14+](https://img.shields.io/badge/Python-3.14%2B-blue) ![CEJBSBDSL](https://img.shields.io/badge/CEJBSBDSL-0.5.0-green)
+![Python 3.14+](https://img.shields.io/badge/Python-3.14%2B-blue) ![CEJBSBDSL](https://img.shields.io/badge/CEJBSBDSL-0.0.1-green)
 
 
 ![Terminal image with title in big ASCII art letters, "The space Trail"](images/TheSpaceTrail.png)
